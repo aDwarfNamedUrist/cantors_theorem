@@ -33,7 +33,7 @@ theorem cantor : ¬ isBijective ℕ (ℕ → Bool) := by
     rwa [←hd, hD] at h2
 
 
--- This version of the proof 
+-- This version of the proof is a bit shorter because it avoids rewrites of things which are definitionally equal
 theorem cantor2 : ¬ isBijective ℕ (ℕ → Bool) := by
     rw [isBijective]
     push_neg
